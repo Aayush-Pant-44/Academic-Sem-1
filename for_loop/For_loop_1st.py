@@ -1,127 +1,148 @@
 #1
-a = [1, 2, 3, 4]
-for i in range(len(a)-1, -1, -1):
-    print(a[i], end=" ")
+lst=[1,2,3,4]
+reverse_list=[]
+for i in range(-1,-len(lst)-1,-1):
+  reverse_list.append(lst[i])
+print(reverse_list)
 
 #2
-a = "python"
-for i in range(len(a)-1, -1, -1):
-    print(a[i], end="")
+a="python" 
+b=""
+for i in range(len(a)-1,-1,-1):
+  b+=a[i]
+print(b)
 
 #3
-n = int(input("Enter a number: "))
-for i in range(1, 11):
-    print(n, "x", i, "=", n*i)
+n=int(input("enter any number: "))
+for i in range(1,11,1):
+  print(f"{n}*{i}={n*i}")
 
 #4
-fruits = ["apple", "banana", "cherry"]
-for fruit in fruits:
-    print(fruit)
+lst=["apple", "banana", "cherry"]
+for i in lst:
+  print(i)
 
-#5a
-for i in range(2, 21, 2):
-    print(i, end=" ")
+#5
+#a
+for i in range(0,20,2):
+  print(i)
 
-#5b
-for i in range(1, 20, 2):
-    print(i, end=" ")
+#b
+for i in range(1,20,2):
+  print(i)
 
 #6
-for i in range(10, 301, 10):
-    print(i, end=" ")
+for i in range(10,301,10):
+  print(i)
 
 #7
-for i in range(105, 6, -7):
-    print(i, end=" ")
+for i in range(105,6,-7):
+  print(i)
 
 #8
-n = int(input("Enter a number: "))
-factorial = 1
-for i in range(1, n+1):
-    factorial *= i
-print(factorial)
+num=int(input("enter a num : "))
+fact=1
+for i in range (1,num+1):
+  fact*=i
+print(f"factoral of {num}= {fact}")
 
 #9
-n = input("Enter a number: ")
-for i in range(len(n)-1, -1, -1):
-    print(n[i], end="")
+num=int(input("enter a no: "))
+str_1=str(num)
+str_2=""
+for i in range(-1,-len(str_1)-1,-1):
+  str_2+=str_1[i]
+num_2=int(str_2)
+print(num_2)
 
 #10
 myList = "Parameter"
-count = 0
-for char in myList:
-    count += 1
-print(count)
+len=0
+for i in myList:
+  len+=1
+print(len)
+
 
 #11
-sample_list = [8, 2, 3, -1, 7]
-product = 1
-for num in sample_list:
-    product *= num
-print(product)
+Sample_list = [8,2,3,-1,7]
+mul=1
+for i in Sample_list:
+  mul*=i
+print(mul)
 
 #12
-sample_list = [8, 2, 3, 0, 7]
-total = 0
-for num in sample_list:
-    total += num
-print(total)
+Sample_list = [8, 2, 3, 0, 7]
+sum=0
+for i in Sample_list:
+  sum+=i
+print(sum)
 
 #13
-string = input("Enter a string: ")
-for i in range(0, len(string), 2):
-    print(string[i], end="")
+str=input("enter a string: ")
+index=0
+for i in str:
+  if index%2==0:
+    print(i)
+  index+=1
 
 #14
-string = input("Enter a string: ")
-for i in range(1, len(string), 2):
-    print(string[i], end="")
+str=input("enter a string: ")
+index=0
+for i in str:
+  if index%2!=0:
+    print(i)
+  index+=1
 
 #15
-n = 10
-total = 0
-for i in range(1, n+1):
-    total += i
-print(total)
+sum=0
+for i in range(1,11):
+  sum+=i
+print(sum)
 
 #16
-sample_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-for num in sample_list:
-    if num % 2 == 0:
-        print(num, end=" ")
+lst=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+for i in lst:
+  if i%2==0:
+    print(i)
+
 
 #17
-sample_list = [12, 13, 14, 15, 16, 17, 18, 19]
-for num in sample_list:
-    if num % 2 != 0:
-        print(num, end=" ")
+lst=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+for i in lst:
+  if i%2!=0:
+    print(i)
 
 #18
-for i in range(1, 101):
-    if i % 5 == 0:
-        print(i, end=" ")
+for i in range(1,101):
+  if i%5==0:
+    print(i)
 
 #19
-sample_list = [3, 7, 2, 8, 5]
-largest = sample_list[0]
-for num in sample_list:
-    if num > largest:
-        largest = num
-print(largest)
-
+lst=[3, 7, 9, 9, 5]
+a=lst[0]
+for i in range(1,len(lst)):
+  if a>lst[i]:
+    a=a
+  elif lst[i]>a:
+    a=lst[i]
+  else:
+    a=a
+print(a)
+    
 #20
-for i in range(1, 11):
-    print(i**2, end=" ")
+for i in range(1,11):
+  print(i**2)
 
 #21
-for i in range(1, 6):
-    print(i**3, end=" ")
+for i in range(1,6):
+  print(i**3)
 
 #22
-for char in "Python":
-    print(char, end=" ")
+str="Python"
+for i in str:
+  print(i)
 
 #23
-for i in range(1, 51):
-    if i % 3 == 0 and i % 5 == 0:
-        print(i, end=" ")
+for i in range(1,50):
+  if i%3==0 and i%5==0:
+    print(i)
